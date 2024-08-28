@@ -166,13 +166,13 @@ Merge Sort)***.
 
 From the ***0(N \* log(N))*** time complexity notation, the ***log(N)***
 is representing the time complexity of the sorting procedure, which is
-resulted by dividing ***N***by 2, where ***N*** is the linear time took
+resulted by dividing ***N*** by 2, where ***N*** is the linear time took
 to sort all the elements in the input, creating a total number of
 subproblems equal with ***S = G \* E / G***, where ***S*** is the total
 number of subproblems, ***E*** is the total number of elements in the
 input, and ***G*** is the geometric sequence value with an initial value
-of 1 and that is incremented with the current ***G*** value times 2 for
-each subproblem layer.
+of 1 and that is incremented by 1 for
+each subproblem layer, times 2. The multiplication by 2 represents the split done by each recursion. **S = 2 * 3 * 5 / 3 * 2** => **S = 3 * 5 / 3**
 
 ![](vertopal_41849d6da22a471abd4ca242134bfc38/media/image3.png)
 
